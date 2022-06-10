@@ -1,0 +1,28 @@
+.sidebarRow {
+     display: flex;
+     align-items: center;
+     padding: 15px;
+     cursor: pointer;
+}
+
+.sidebarRow:hover {
+     background-color: #EFF2F5;
+     border-radius: 10px;
+}
+
+.sidebarRow h4 {
+     margin-left: 20px;
+     font-weight: 600;
+}
+
+.sidebarRow .MuiSvgIcon-root {
+     font-size: xx-large;
+     color: #2E81F4;
+}
+
+[data-testid="ExpandMoreOutlinedIcon"]{
+border-radius: 999px;
+background-color:#e3e4e6;
+padding:2px 2px;
+border-bottom: none;
+}
