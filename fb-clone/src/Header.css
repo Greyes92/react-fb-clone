@@ -1,5 +1,6 @@
 .header {
      display: flex;
+     flex: 1;
      padding: 10px 20px;
      justify-content: space-between;
      position: sticky;
@@ -8,6 +9,9 @@
      top: 0;
      box-shadow: 0px 5px 8px -9px black;
      height: 45px;
+     flex-grow: 1;
+     /* min-width: max-content;
+     max-width: fit-content; */
 }
 
 .header__left {

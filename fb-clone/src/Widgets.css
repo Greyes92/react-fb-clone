@@ -1,0 +1,8 @@
+.widgets iframe{
+     display: flex;
+     position: relative;
+     overflow: hidden;
+     flex-grow: 1;
+     /* scroll-margin-right: 0; */
+     /* position: fixed; */
+}

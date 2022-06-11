@@ -8,11 +8,11 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import EmojiFlagsIcon from '@mui/icons-material/EmojiFlags';
 import ExpandMoreOutlined from "@mui/icons-material/ExpandMoreOutlined";
-import { Avatar } from '@mui/material';
+// import { Avatar } from '@mui/material';
 
 function Sidebar() {
   return <div className='sidebar'>
-       <SidebarRow src={Avatar} title="Gibran Reyes"/>
+       <SidebarRow src={"https://media-exp1.licdn.com/dms/image/D5635AQE33M2qFUBEWg/profile-framedphoto-shrink_400_400/0/1654807847669?e=1655510400&v=beta&t=HPfE3Ra2MVWKm7NMSXGbcVaAv5VRj21nTEHTFtRm4N4"} title="Gibran Reyes"/>
        <SidebarRow Icon={PeopleIcon} title="Friends"/>
        <SidebarRow Icon={SupervisedUserCircleIcon} title="Groups"/>
        <SidebarRow Icon={ChatIcon} title="Messenger"/>

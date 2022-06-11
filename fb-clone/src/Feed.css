@@ -1,0 +1,12 @@
+.feed {
+     display: flex;
+     flex: 1;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     padding: 30px 100px;
+     position: relative;
+     background-color: #F1F2F5;
+     max-width: max-content;
+     /* min-width: max-content; */
+}
