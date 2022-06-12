@@ -4,15 +4,31 @@ import { Avatar } from '@mui/material';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmotionIcon from '@mui/icons-material/InsertEmoticon';
+import { useStateValue } from './StateProvider';
+import db from './firebase';
+import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+// import { initializeApp } from 'firebase/app'
+// import { Firestore, getFirestore } from 'firebase/firestore/lite';
+// import { getFirestore } from 'firebase/firestore/lite';
+
 
 function PostStatus() {
+  const [{ user }, dispatch] = useStateValue();
   const [input, setInput] = useState('');
   const [imageUrl, setImageUrl] = useState('');
 
   const handleSubmit = (e) => {
           e.preventDefault();
 
-          //some clever db stuff
+          // db.collection('posts').add({
+          // query(collection(db, 'posts')).add({
+          addDoc(collection(db, 'posts'), {
+               message: input,
+               timestamp: serverTimestamp(),
+               profilePic: user.photoURL,
+               username: user.displayName,
+               image: imageUrl
+          });
 
           setInput("");
           setImageUrl("");
@@ -23,17 +39,17 @@ function PostStatus() {
   return (
     <div className='postStatus'>
          <div className='postStatus__top'>
-              <Avatar src="https://media-exp1.licdn.com/dms/image/D5635AQE33M2qFUBEWg/profile-framedphoto-shrink_400_400/0/1654807847669?e=1655510400&v=beta&t=HPfE3Ra2MVWKm7NMSXGbcVaAv5VRj21nTEHTFtRm4N4"/>
+              <Avatar src={user.photoURL}/>
               <form>
                <input
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     className='postStatus__input' 
-                    placeholder={`What's on your mind?`} 
+                    placeholder={`What's on your mind, ${user.displayName}?`} 
                />
                <input 
                     value={imageUrl}
-                    onChange={(e) => setInput(e.target.value)}
+                    onChange={(e) => setImageUrl(e.target.value)}
                     placeholder='image URL (Optional)'
                />
                <button onClick={handleSubmit} type="submit">

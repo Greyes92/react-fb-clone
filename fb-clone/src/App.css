@@ -1,15 +1,12 @@
 .app {
      background-color: #F1F2F5;
-     /* min-width: max-content;
-     max-width: max-content; */
      justify-content: center;
 }
 
 .app__body {
      display: flex;
-     /* overflow: hidden; */
      justify-content: center;
+     /* overflow: hidden; */
      /* min-width: max-content;
      max-width: max-content; */
-     
 }

@@ -11,9 +11,12 @@ import AddIcon from "@mui/icons-material/Add";
 import ForumIcon from "@mui/icons-material/Forum";
 import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+import { useStateValue } from './StateProvider';
 
 
 function Header() {
+  const [{ user }, dispatch] = useStateValue();
+
   return <div className='header'>
        <div className='header__left'>
           <img
@@ -46,8 +49,8 @@ function Header() {
 
        <div className='header__right'>
           <div className='header__info'>
-               <Avatar src="https://media-exp1.licdn.com/dms/image/D5635AQE33M2qFUBEWg/profile-framedphoto-shrink_400_400/0/1654807847669?e=1655510400&v=beta&t=HPfE3Ra2MVWKm7NMSXGbcVaAv5VRj21nTEHTFtRm4N4"/>
-               <h4>Gibran Reyes</h4>
+               <Avatar src={user.photoURL}/>
+               <h4>{user.displayName}</h4>
           </div>
 
           <IconButton>

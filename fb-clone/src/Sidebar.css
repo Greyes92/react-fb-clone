@@ -1,12 +1,10 @@
 .sidebar {
      padding: 15px 10px;
      flex: 0.33;
-     /* flex-grow: 1;
-     flex-shrink: 1; */
      max-width: fit-content;
      overflow: hidden;
-     
+     /* flex-grow: 1;
+     flex-shrink: 1; */
      /* position: relative; */
-     
      /* left: 0; */
 }

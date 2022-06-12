@@ -4,10 +4,18 @@ import Feed from './Feed';
 import Header from './Header';
 import Sidebar from './Sidebar';
 import Widgets from './Widgets';
+import Login from './Login';
+import { useStateValue } from "./StateProvider";
 
 function App() {
+  const [{ user }, dispatch] = useStateValue();
+
   return (
     <div className="app">
+      {!user ? (
+        <Login />
+      ) : (
+      <>
 
       <Header />
 
@@ -17,8 +25,8 @@ function App() {
         <Widgets />
       </div>
 
-    
-
+      </>
+      )}
     </div>
   );
 }
