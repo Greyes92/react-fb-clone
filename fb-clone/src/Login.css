@@ -35,13 +35,6 @@ div.login__logo {
 }
 
 .login__buttons {
-     /* height: 200px;
-     width: 350px;
-     background-color: white;
-     justify-content: center;
-     align-items: center;
-     margin: 50px;
-     border-radius: 8px; */
      align-items: center;
      justify-content: center;
      background-color: #fff;
@@ -55,20 +48,13 @@ div.login__logo {
      height: 200px;
 }
 
-/* .login button {
-     width: 300px;
-     background-color: #2e81f4;
-     color: white;
-     font-weight: 800;
-     font-size: large;
-} */
-
 .login button:hover {
      background-color: white;
      color: #2e81f4;
 }
 
-button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.loginBtn.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+/* button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.loginBtn.css-1e6y48t-MuiButtonBase-root-MuiButton-root { */
+button.MuiButton-root.loginBtn {
      width: 300px;
      background-color: #2e81f4;
      color: white;
@@ -77,12 +63,12 @@ button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.
      margin: 15px;
 }
 
-button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.loginBtn.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
+button.MuiButton-root.loginBtn:hover {
      background-color: white;
      color: #2e81f4;
 }
 
-button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.createNewAccountBtn.css-1e6y48t-MuiButtonBase-root-MuiButton-root {
+button.MuiButton-root.createNewAccountBtn {
      width: 300px;
      background-color: #42b72a;
      color: white;
@@ -91,7 +77,7 @@ button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.
      margin: 15px;
 }
 
-button.MuiButton-root.MuiButton-text.MuiButton-textPrimary.MuiButton-sizeMedium.MuiButton-textSizeMedium.MuiButtonBase-root.createNewAccountBtn.css-1e6y48t-MuiButtonBase-root-MuiButton-root:hover {
+button.MuiButton-root.createNewAccountBtn:hover {
      background-color: white;
      color: #42b72a;
 }

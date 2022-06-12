@@ -6,6 +6,7 @@
      align-items: center;
      padding: 30px 100px;
      position: relative;
-     background-color: #F1F2F5;
+     /* background-color: #F1F2F5; */
      max-width: max-content;
+     margin-right: -40px;
 }

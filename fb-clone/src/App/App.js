@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
-import Feed from './Feed';
-import Header from './Header';
-import Sidebar from './Sidebar';
-import Widgets from './Widgets';
-import Login from './Login';
-import { useStateValue } from "./StateProvider";
+import Feed from '../Feed';
+import Header from '../Header';
+import Sidebar from '../Sidebar';
+import Contacts from '../Contacts';
+import Login from '../Login';
+import { useStateValue } from "../StateProvider";
 
 function App() {
   const [{ user }, dispatch] = useStateValue();
@@ -22,7 +22,7 @@ function App() {
       <div className="app__body">
         <Sidebar />
         <Feed />
-        <Widgets />
+        <Contacts />
       </div>
 
       </>

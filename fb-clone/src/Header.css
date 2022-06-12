@@ -85,8 +85,11 @@
      border-bottom: none;
 }
 
-.header__right .MuiSvgIcon-root:hover {
+.header__right button .MuiSvgIcon-root:hover {
      background-color:#c4c5c5;
+     border-radius: 999px;
+     padding:10px 10px;
+     border-bottom: none;
 }
 
 .header__info {

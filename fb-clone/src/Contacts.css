@@ -1,0 +1,20 @@
+/* .widgets iframe{
+     display: flex;
+     position: relative;
+     overflow: hidden;
+     flex-grow: 1; */
+     /* scroll-margin-right: 0; */
+     /* position: fixed; */
+/* } */
+
+.contacts {
+     padding: 30px 10px;
+     padding-left: 0px;
+     flex: 0.33;
+     max-width: fit-content;
+     overflow: hidden;
+}
+
+.contacts h3 {
+     margin-bottom: 20px;
+}

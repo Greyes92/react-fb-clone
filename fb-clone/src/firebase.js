@@ -1,9 +1,7 @@
-// import { firebase } from 'firebase';
 import { initializeApp } from 'firebase/app'
 import { getAuth } from "firebase/auth";
 import { GoogleAuthProvider } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore/lite';
-// import { getFirestore, collection, getDocs } from 'firebase/firestore/lite';
 
 const firebaseConfig = {
      apiKey: "AIzaSyDfSi-d6RX1WVWzv4MjI3pmp7E9NYIR_V8",

@@ -7,9 +7,10 @@ import SubscriptionsOutlinedIcon from '@mui/icons-material/SubscriptionsOutlined
 import StorefrontOutlinedIcon from '@mui/icons-material/StorefrontOutlined';
 import SupervisedUserCircleIcon from '@mui/icons-material/SupervisedUserCircle';
 import { Avatar, IconButton } from '@mui/material';
-import AddIcon from "@mui/icons-material/Add";
+import AppsIcon from '@mui/icons-material/Apps';
 import ForumIcon from "@mui/icons-material/Forum";
-import NotificationsActiveIcon from '@mui/icons-material/NotificationsActive';
+import MapsUgcIcon from '@mui/icons-material/MapsUgc';
+import NotificationsIcon from '@mui/icons-material/Notifications';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useStateValue } from './StateProvider';
 
@@ -54,13 +55,13 @@ function Header() {
           </div>
 
           <IconButton>
-               <AddIcon />
+               <AppsIcon />
           </IconButton>
           <IconButton>
-               <ForumIcon />
+               <MapsUgcIcon />
           </IconButton>
           <IconButton>
-               <NotificationsActiveIcon />
+               <NotificationsIcon />
           </IconButton>
           <IconButton>
                <ExpandMoreIcon />
