@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component, useRef, useState }from 'react'
 import './Header.css';
 import SearchIcon from '@mui/icons-material/Search';
 import HomeIcon from '@mui/icons-material/Home';
@@ -13,12 +13,15 @@ import MapsUgcIcon from '@mui/icons-material/MapsUgc';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { useStateValue } from './StateProvider';
+import DropDownMenu from './DropDownMenu';
 
 
 function Header() {
   const [{ user }, dispatch] = useStateValue();
 
-  return <div className='header'>
+
+  return (
+     <div className='header'>
        <div className='header__left'>
           <img
                src="https://upload.wikimedia.org/wikipedia/en/thumb/0/04/Facebook_f_logo_%282021%29.svg/800px-Facebook_f_logo_%282021%29.svg.png"
@@ -64,12 +67,13 @@ function Header() {
                <NotificationsIcon />
           </IconButton>
           <IconButton>
-               <ExpandMoreIcon />
+               <DropDownMenu />
           </IconButton>
        </div>
-  
-          
-  </div>;
+       </div>
+  );
 }
+
+
 
 export default Header;
