@@ -2,8 +2,8 @@ import React, { useRef, useState } from 'react';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import "./DropDownMenu.css"
 import { deleteUser, getAuth } from 'firebase/auth';
-import { actionTypes, initialState } from './reducer';
-import { useStateValue } from './StateProvider';
+import { actionTypes, initialState } from '../reducer';
+import { useStateValue } from '../StateProvider';
 
 function DropDownMenu () {
      const auth = getAuth();

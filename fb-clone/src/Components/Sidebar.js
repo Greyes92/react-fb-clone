@@ -8,7 +8,7 @@ import StorefrontIcon from '@mui/icons-material/Storefront';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
 import EmojiFlagsIcon from '@mui/icons-material/EmojiFlags';
 import ExpandMoreOutlined from "@mui/icons-material/ExpandMoreOutlined";
-import { useStateValue } from "./StateProvider"
+import { useStateValue } from "../StateProvider"
 // import { Avatar } from '@mui/material';
 
 function Sidebar() {

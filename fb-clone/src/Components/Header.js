@@ -12,7 +12,7 @@ import ForumIcon from "@mui/icons-material/Forum";
 import MapsUgcIcon from '@mui/icons-material/MapsUgc';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
-import { useStateValue } from './StateProvider';
+import { useStateValue } from '../StateProvider';
 import DropDownMenu from './DropDownMenu';
 
 

@@ -4,8 +4,8 @@ import { Avatar } from '@mui/material';
 import VideocamIcon from '@mui/icons-material/Videocam';
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary';
 import InsertEmotionIcon from '@mui/icons-material/InsertEmoticon';
-import { useStateValue } from './StateProvider';
-import db from './firebase';
+import { useStateValue } from '../StateProvider';
+import db from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 // import { initializeApp } from 'firebase/app'
 // import { Firestore, getFirestore } from 'firebase/firestore/lite';

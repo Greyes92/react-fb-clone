@@ -3,7 +3,7 @@ import "./Feed.css";
 import PostStatus from './PostStatus';
 import StoryReel from './StoryReel';
 import UserPost from './UserPost';
-import db from "./firebase"
+import db from "../firebase"
 import { collection, doc, setDoc, orderBy, onSnapshot, query } from 'firebase/firestore';
 
 function Feed() {
