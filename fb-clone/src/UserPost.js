@@ -1,11 +1,12 @@
 import { Avatar } from '@mui/material';
 import React from 'react';
 import './UserPost.css';
-import ThumbUpIcon from '@mui/icons-material/ThumbUp';
+// import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ChatBubbleOutlineIcon from '@mui/icons-material/ChatBubbleOutline';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import NearMeIcon from '@mui/icons-material/NearMe';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
+import LikeButton from './LikeButton';
 
 function UserPost({ profilePic, image, username, timestamp, message}) {
   return (
@@ -32,8 +33,7 @@ function UserPost({ profilePic, image, username, timestamp, message}) {
 
          <div className='userPost__options'>
               <div className='userPost__option'>
-                   <ThumbUpIcon />
-                   <p>Like</p>
+                   <LikeButton />
               </div>
               <div className='userPost__option'>
                    <ChatBubbleOutlineIcon />
